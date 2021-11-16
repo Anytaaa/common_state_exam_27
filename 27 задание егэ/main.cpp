@@ -21,9 +21,10 @@ void max_sum_div()
     for (int i(0); i<n; i++)
         ifs >> numbers[i];
     cout << endl;
-    for (int j(0); j<n-1; j++)
-        for (int i(j+1); i<n; i++)
-            cout << numbers[j] << " " << numbers[i] << endl;
+    for (int i(0); i<n-1; i++)
+        for (int j(i+1); i<n; i++)
+
+            cout << numbers[i]  +  numbers[j] << endl;
 
 }
 
