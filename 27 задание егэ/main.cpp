@@ -6,7 +6,7 @@ using namespace std;
 void min_sum_effectiv()
 {
     /**
-    1.считать 4 числа в червяке
+    +1.считать 4 числа в червяке
     2.число в хвосте червяка - потенциальный минимум из пройденных
     3. сдвинуть все числа в червяке в лево(0123-1234)
     4.считать  5 число в зубе червяка
@@ -16,7 +16,17 @@ void min_sum_effectiv()
     **/
 }
 {
+    int n(0);
+    cin >> n;
+    vector<int> numbers(4,0);
+    for (int i(0); i<4; i++)
+        cin >> numbers[i];
+    for (int i(0); i<4; i++)
+        cout >> numbers[i];
+}
+int main()
+{
 
-    cout << "Hello world!" << endl;
+    min_sum_effectiv();
     return 0;
 }
