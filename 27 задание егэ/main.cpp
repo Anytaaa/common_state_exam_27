@@ -14,23 +14,27 @@ void min_sum()
  (то есть между ними должно стоять минимум 3 других числа).
 
  +1. считать числа
- 2. вывести пары
+ +2. вывести пары
  3. вывести пары с минимальным расстоянием
  4. вместо выводф пары посчитать сумму
  5. найти минимум среди сумм
  **/
 
-int n;
-cin >> n;
-vector<int> numbers(n,0);
-for (int i(0);i<n;i++)
-    cin>>numbers [i];
-for(int i(0); i<n;i++)
-    cout << numbers[i]<<" ";
+    int n(0);
+    cin >> n;
+    vector<int> numbers(n);
+    for (int i(0); i<n; i++)
+        cin >> numbers[i];
+    cout << endl;
+    for (int j(0); j<n-1; j++)
+        for (int i(j+1); i<n; i++)
+            cout << numbers[j] << " " << numbers[i] << endl;
 
 }
-int maun()
+
+int main()
 {
     min_sum();
+
     return 0;
 }
