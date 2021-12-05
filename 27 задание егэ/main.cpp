@@ -1,9 +1,12 @@
 #include <iostream>
 
 using namespace std;
-
-int main()
+void
+number_of_22
 {
-    cout << "Hello world!" << endl;
-    return 0;
+     /**
+    1) считать числа
+    2) добавить его к одному из счетчиков
+    3) ответ n22*n11+n22*n2+n22*no+n22(n22-1)/2*n11*n2
+    */
 }
