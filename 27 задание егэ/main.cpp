@@ -14,7 +14,10 @@ number_of_22
     cin>>n;
     for (inti(0);i<n;i++)
     {
-
+        cin>>cur;
+        if(cur%22==0)n22++;
+        else if (cur%2==0)n2++;
+        else if (cur%11==0)n11++;
     }
 }
 
