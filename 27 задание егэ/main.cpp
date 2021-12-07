@@ -22,7 +22,7 @@ void min_sum_effectiv()
     for (int i(0); i<4; i++)
         cin >> numbers[i];
     for (int i(0); i<4; i++)
-        cout >> numbers[i];
+        cout << numbers[i]<<" ";
 }
 int main()
 {
