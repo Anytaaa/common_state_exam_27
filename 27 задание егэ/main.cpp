@@ -5,15 +5,15 @@ using namespace std;
 void sum_max_num()
 {
     /**
-     +1)считать запомнить числа
+     +1)считать числа
      +2)найти наибольшее четное и наибольшее нечетное числа
-     3)вывести сумму наибольших чисел
+     +3)вывести сумму наибольших чисел
     */
      int n(0);
     cin >> n;
     vector <int> numbers(n);
-    int max_div = -2000;
-    int max_not_div = -2000;
+    int max_div_2 = -2000;
+    int max_not_div_2 = -2000;
     for (int i(0); i<n; i++)
             {
                 cin>> numbers[i];
@@ -26,7 +26,7 @@ void sum_max_num()
                         if (numbers[i] > max_not_div_2)
                             max_not_div_2 = numbers[i];
             }
-    cout << max_not_div_2 << ' ' << max_div_2;
+    cout << max_not_div_2 + max_div_2;
 
 }
 
