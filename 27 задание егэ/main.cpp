@@ -12,9 +12,11 @@ void num_sum()
     /*/
     +1)берем первые 7 чисел
     +2) просматриваем их на предмет того, кратны ли они 27
-    3) берем следующие числа от 7 до конца
+    +3) берем следующие числа от 7 до конца
     */
-int N;
+
+
+    int N;
     cin >> N;
     int count = 0;
     vector<int> number(7, 0);
@@ -35,6 +37,16 @@ int N;
         int a;
         cin >> a;
 
+        for (int j = 0; j < 6; j++)
+        {
+            number[j] = number[j + 1];
+            count += is_sum(number[j], a);
+        }
+        number[6] = a;
+    }
+
+    cout << count;
+}
 
 int main()
 {
