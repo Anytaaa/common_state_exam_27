@@ -2,29 +2,28 @@
 #include <vector>
 
 using namespace std;
-
-void max_66()
+void div_66()
 {
     /**
-    +1)считать и сохранить все числа
-    2) вывести все пары
-    3) вместо пары вывести суммы
-    4) проверить делимость суммы
-    5) вывести только наибольшую сумму
+     +1) считать числа
+     +2) вывести все пары чисел
+     3) вместо пар вывести произведения
+     4) проверить делимость произведений
+     5) посчиттать и выести коичество подходящих пар
     */
-      int n(0);
+   int n(0);
     cin >> n;
-    vector <int> numbers(n);
-    for (int i(0); i<n; i++)
-            cin>> numbers[i];
-    cout << endl;
-    for (int i(0); i<n; i++)
-        cout << numbers[i] << " ";
-
+    vector<int> numbers(n, 0);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
+    for (int j = 0; j < n; ++j)
+        for (int i = j + 1; i < n; ++i)
+            cout << numbers[j] << ' ' << numbers[i] << endl;
 }
+
 int main()
 {
-    max_66();
+    div_66();
     return 0;
 }
 
