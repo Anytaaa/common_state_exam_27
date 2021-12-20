@@ -9,7 +9,7 @@ void num_sum()
      +1)считать последовательность чисел
      +2) вывести пары удовлетворяющие первому условию
      +3) вывести пары удовлетворяющие второму условию
-     4) вывести ответ
+     +4) вывести ответ
     */
    int n;
    cin >> n;
@@ -17,12 +17,14 @@ void num_sum()
     for (int i(0); i < n; i++)
         cin >> numbers[i];
 
+    int count = 0;
    for (int i = 0; i < n; ++i)
     for (int j = i + 1; j < n; ++j)
     {
-        if ((abs(i - j) < 7 and ((numbers[i] + numbers[j]) % 27 == 0))
-            cout << numbers[i] << ' ' << numbers[j] << endl;
+        if ((abs(i - j) < 7) and ((numbers[i] + numbers[j]) % 27 == 0))
+            count += 1;
     }
+    cout << count;
 }
 int main()
 {
