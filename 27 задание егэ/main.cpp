@@ -1,26 +1,35 @@
 #include <iostream>
-#include <vector>
+#include <string>
 
 using namespace std;
-void div_15()
+
+void
+number_of_10()
 {
     /**
     +1) считать числа
     +2) добавить его к одному из счетчиков
-    +3) ответ n22*n11+n22*n2+n22*no+n22(n22-1)/2*n11*n2
+    +3) ответ n10*n5+n10*n2+n10*no+n10(n10-1)/2*n5*n2
     **/
-   int n(0);
-    cin >> n;
-    vector<int> numbers(n, 0);
-    for (int i(0); i < n; i++)
-        cin >> numbers[i];
-    for (int j = 0; j < n; ++j)
-        for (int i = j + 1; i < n; ++i)
-            cout << numbers[j] * numbers[i] << endl;
-}
 
+
+
+    int n(0),cur(0);
+    int n10(0),n2(0),n5(0),no(0);
+    cin>>n;
+    for (int i(0);i<n;i++)
+    {
+        cin>>cur;
+        if(cur%10==0)n10++;
+        else if (cur%2==0)n2++;
+        else if (cur%5==0)n5++;
+    }
+    no = n-n10-n2-n5;
+    cout<<
+    n10*n5+n10*n2+n10*no+n10*(n10-1)/2+n5*n2<<endl;
+}
 int main()
 {
-    div_15();
+    number_of_10();
     return 0;
 }
